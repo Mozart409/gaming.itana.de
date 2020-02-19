@@ -12,17 +12,15 @@ const { Step } = Steps;
 
 export const query = graphql`
   query {
-    
-  site {
-    host
-    buildTime(fromNow: true)
-    port
-    siteMetadata {
-      siteUrl
-      title
+    site {
+      host
+      buildTime(fromNow: true)
+      port
+      siteMetadata {
+        siteUrl
+        title
+      }
     }
-  }
-
   }
 `;
 
@@ -34,10 +32,8 @@ function IndexPage({ data }) {
         keywords={[`Itana GmbH Gaming`]}
         description=""
       />
-    
-      <div>
-       
-      </div>
+
+      <div></div>
     </Layout>
   );
 }

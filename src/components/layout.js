@@ -13,7 +13,6 @@ import "../css/main.css";
 import "antd/dist/antd.css";
 
 function Layout({ children }) {
-
   return (
     <div className="flex flex-col font-sans min-h-screen text-gray-900">
       <Helmet>
@@ -23,7 +22,7 @@ function Layout({ children }) {
           content="y0fNm10Zw-mMjHsc7sW-SHicOMEldY3I6d2K4KGUBYY"
         />
       </Helmet>
-      <Header/>
+      <Header />
 
       <main className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-8 w-full">
         {children}
@@ -38,13 +37,7 @@ function Layout({ children }) {
       <footer className="bg-gray-800">
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
           <p className="text-white">
-            <Link
-              to="/mietbedingungen"
-              className="font-bold no-underline text-white"
-            >
-              Mietbedingungen
-            </Link>
-          </p>
+            </p>
           <p className="text-white">
             <Link to="/impressum" className="font-bold no-underline text-white">
               Impressum
@@ -63,6 +56,5 @@ function Layout({ children }) {
     </div>
   );
 }
-
 
 export default Layout;

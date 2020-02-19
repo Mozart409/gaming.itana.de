@@ -43,7 +43,7 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit --no-verify": "pretty-quick --staged "
+      "pre-commit": "pretty-quick"
     }
   },
   "scripts": {

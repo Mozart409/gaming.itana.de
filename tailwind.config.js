@@ -8,8 +8,8 @@ module.exports = {
         "84": "21rem",
         "96": "24rem"
       },
-      colors:{
-        'itana-blue': '#00457a'
+      colors: {
+        "itana-blue": "#00457a"
       }
     }
   },

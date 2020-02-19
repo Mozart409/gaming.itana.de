@@ -2,22 +2,20 @@ import React, { useState } from "react";
 import { Menu, Dropdown, Icon } from "antd";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
-
 function Header() {
-
   const data = useStaticQuery(graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-        description
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          description
+        }
       }
     }
-  }
-`);
+  `);
 
   const [isExpanded, toggleExpansion] = useState(false);
-  
+
   return (
     <nav className="bg-itana-blue align-baseline">
       <div className="flex flex-wrap items-center justify-between  md:p-8 mr-2 p-4">
@@ -25,8 +23,10 @@ function Header() {
           {/* <img src={Logo} alt="Icon" className="w-16 mr-4"></img>
           <img src={Schriftzug} alt="Icon" className="w-48 xl:w-64 mr-4"></img> */}
           <div className="flex flex-col">
-          <span className="font-bold text-xl tracking-tight">{data.site.siteMetadata.title}</span>
-          <span className="">{data.site.siteMetadata.description}</span>
+            <span className="font-bold text-xl tracking-tight">
+              {data.site.siteMetadata.title}
+            </span>
+            <span className="">{data.site.siteMetadata.description}</span>
           </div>
         </Link>
 
@@ -57,14 +57,12 @@ function Header() {
               Home
             </Link>
 
-                <Link
+            <Link
               to="/kontakt"
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
               Kontakt
             </Link>
-
-           
           </div>
         </div>
       </div>

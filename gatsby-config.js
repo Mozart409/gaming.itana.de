@@ -33,7 +33,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-sitemap`,
-   
+
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
@@ -42,7 +42,7 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }]
       }
     },
-   
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,7 +50,7 @@ module.exports = {
         path: `${__dirname}/src/images/`
       }
     },
-    
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -6,11 +6,7 @@ import SEO from "../components/seo";
 function ImpressumPage() {
   return (
     <Layout>
-      <SEO
-        title="Impressum"
-        keywords={[`Impressum`]}
-        description="Impressum"
-      />
+      <SEO title="Impressum" keywords={[`Impressum`]} description="Impressum" />
       <Helmet>
         <link rel="canonical" href="http://itana.de/contact" />
       </Helmet>
