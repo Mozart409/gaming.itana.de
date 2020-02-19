@@ -34,7 +34,7 @@ function ImpressumPage() {
           <br />
           Telefax: + 49 711 49066 455
           <br />
-          E-Mail: mobility@itana.de
+          E-Mail: info@itana.de
         </p>
         <p>
           Geschäftsführer:&nbsp;Jörg Weißleder*

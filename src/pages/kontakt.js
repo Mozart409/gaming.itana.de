@@ -44,12 +44,12 @@ function KontaktPage() {
           <br />
           E-Mail:{" "}
           <a
-            href="mailto:mobility@itana.de"
+            href="mailto:info@itana.de"
             target="_blank"
             rel="noopener noreferrer"
             className="text-itana-blue"
           >
-            mobility@itana.de
+            info@itana.de
           </a>
         </p>
       </section>
