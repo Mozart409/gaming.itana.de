@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind responsive;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+h1 {
+  @apply font-bold !important;
+}
+h2 {
+  @apply font-semibold my-4 !important;
+}
+h3 {
+  @apply font-semibold my-4 !important;
+}
+
+section {
+  @apply mt-16;
+}

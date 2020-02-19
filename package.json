@@ -1,0 +1,83 @@
+{
+  "name": "gaming.itana.de",
+  "description": "gaming.itana.de",
+  "version": "0.1.0",
+  "author": "Mozart409",
+  "dependencies": {
+    "antd": "^3.26.8",
+    "fs": "^0.0.1-security",
+    "gatsby": "^2.19.17",
+    "gatsby-image": "^2.2.40",
+    "gatsby-plugin-arengu-forms": "^1.0.1",
+    "gatsby-plugin-google-tagmanager": "^2.1.25",
+    "gatsby-plugin-htaccess": "^1.4.0",
+    "gatsby-plugin-htaccess-redirects": "^0.2.0",
+    "gatsby-plugin-manifest": "2.2.41",
+    "gatsby-plugin-offline": "3.0.34",
+    "gatsby-plugin-postcss": "2.1.20",
+    "gatsby-plugin-purgecss": "4.0.1",
+    "gatsby-plugin-react-helmet": "3.1.22",
+    "gatsby-plugin-remove-console": "^0.0.2",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-sitemap": "^2.2.27",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-json": "^2.2.26",
+    "gatsby-transformer-sharp": "^2.3.14",
+    "graphql": "14.6.0",
+    "prop-types": "15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "16.12.0",
+    "react-helmet": "5.2.1",
+    "react-load-script": "^0.0.6",
+    "react-scroll-up": "^1.3.3",
+    "typeface-montserrat": "^0.0.75",
+    "typeface-montserrat-alternates": "^0.0.72",
+    "universal-cookie": "^4.0.3"
+  },
+  "keywords": [
+    "gaming",
+    "itana",
+    "§7 SpielV"
+  ],
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit --no-verify": "pretty-quick --staged "
+    }
+  },
+  "scripts": {
+    "clean": "gatsby clean",
+    "analyze:lint": "eslint --ext .jsx --ext .js .",
+    "analyze:prettier": "prettier --list-different \"**/*.{js,jsx,css,json,md}\"",
+    "analyze": "yarn run analyze:lint && yarn run analyze:prettier",
+    "build": "gatsby clean && gatsby build",
+    "build2": "gatsby build",
+    "develop": "gatsby develop -H 0.0.0.0",
+    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
+    "fix:prettier": "prettier --write \"**/*.{js,jsx,css,json,md}\"",
+    "fix": "yarn run fix:lint && yarn run fix:prettier",
+    "start": "yarn run develop",
+    "serve": "gatsby serve -H 0.0.0.0",
+    "prod": "yarn build && yarn serve",
+    "test": "prettier --check src/**/*.{js,jsx,css,md,json}"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.19.0",
+    "@typescript-eslint/parser": "2.19.0",
+    "babel-eslint": "10.0.3",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "6.8.0",
+    "eslint-config-react-app": "5.2.0",
+    "eslint-plugin-flowtype": "4.6.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.18.3",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "tailwindcss": "1.2.0",
+    "typescript": "3.7.5"
+  }
+}
