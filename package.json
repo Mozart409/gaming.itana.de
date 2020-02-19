@@ -56,7 +56,7 @@
     "develop": "gatsby develop -H 0.0.0.0",
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write \"**/*.{js,jsx,css,json,md}\"",
-    "fix": "yarn run fix:lint && yarn run fix:prettier",
+    "fix": "yarn fix:lint && yarn fix:prettier",
     "start": "yarn run develop",
     "serve": "gatsby serve -H 0.0.0.0",
     "prod": "yarn build && yarn serve",

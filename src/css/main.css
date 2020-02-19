@@ -36,6 +36,9 @@ figcaption {
 .ant-list-header {
   background-color: #dddddd;
 }
+.anticon {
+  vertical-align: 1.5px !important;
+}
 
 .centeredText {
   position: absolute;
