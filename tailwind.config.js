@@ -9,7 +9,7 @@ module.exports = {
         "96": "24rem"
       },
       colors: {
-        "itana-blue": "#00457a"
+        "itana-blue": "#00345d"
       }
     }
   },
