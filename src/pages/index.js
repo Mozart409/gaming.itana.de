@@ -139,7 +139,7 @@ function ÜberprüfungListe() {
                   </tr>
                 ))}
 
-<tr className="bg-gray-50 flex justify-center">
+                <tr className="bg-gray-50 flex justify-center">
                   <td className="px-6 py-4 text-sm leading-5 font-medium text-gray-900">
                     <a
                       href={PDF}
