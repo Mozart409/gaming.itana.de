@@ -58,10 +58,10 @@ module.exports = {
         short_name: `gaming.itana.de`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#d40000`,
+        theme_color: `#43ac45`,
         display: `standalone`,
         include_favicon: true,
-        icon: `src/images/icon-512.png`,
+        icon: `src/images/gaming/gaming.svg`,
         icons: [
           {
             src: `icon-192.png`,
@@ -69,7 +69,7 @@ module.exports = {
             type: `image/png`
           },
           {
-            src: `icon-512.png.png`,
+            src: `icon-512.png`,
             sizes: `512x512`,
             type: `image/png`
           }

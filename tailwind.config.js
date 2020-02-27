@@ -9,7 +9,10 @@ module.exports = {
         "96": "24rem"
       },
       colors: {
-        "itana-blue": "#00345d"
+        "itana-gray": "#d8d8d8",
+        "itana-blue": "#00345d",
+        "itana-green": "#43ac45;",
+        "itana-red": "#d40000"
       }
     }
   },
@@ -19,6 +22,7 @@ module.exports = {
     h3: ["responsive", "hover", "default"]
   },
   plugins: [
+    require("@tailwindcss/ui"),
     function({ addBase, config }) {
       addBase({
         h1: { fontSize: config("theme.fontSize.2xl") },

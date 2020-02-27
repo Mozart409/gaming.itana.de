@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Menu, Dropdown, Icon } from "antd";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
 function Header() {
@@ -17,13 +16,13 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-itana-blue align-baseline">
+    <nav className="bg-itana-green align-baseline">
       <div className="flex flex-wrap items-center justify-between  md:p-8 mr-2 p-4">
         <Link to="/" className=" flex items-center no-underline text-white">
           {/* <img src={Logo} alt="Icon" className="w-16 mr-4"></img>
           <img src={Schriftzug} alt="Icon" className="w-48 xl:w-64 mr-4"></img> */}
           <div className="flex flex-col">
-            <span className="font-bold text-xl tracking-tight">
+            <span className="font-bold text-xl tracking-tight text-white">
               {data.site.siteMetadata.title}
             </span>
             <span className="">{data.site.siteMetadata.description}</span>
@@ -55,6 +54,20 @@ function Header() {
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
               Home
+            </Link>
+
+            <Link
+              to="/about"
+              className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
+            >
+              Über uns
+            </Link>
+
+            <Link
+              to="/7spielv"
+              className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
+            >
+              7SpielV
             </Link>
 
             <Link
