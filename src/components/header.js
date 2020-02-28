@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
+import Logo from "../images/gaming/gaming.svg";
+import LogoText from "../images/gaming/gaming.itana.de.svg";
+
 function Header() {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery123 {
@@ -18,15 +21,11 @@ function Header() {
   return (
     <nav className="bg-itana-green align-baseline">
       <div className="flex flex-wrap items-center justify-between  md:p-8 mr-2 p-4">
-        <Link to="/" className=" flex items-center no-underline text-white">
-          {/* <img src={Logo} alt="Icon" className="w-16 mr-4"></img>
-          <img src={Schriftzug} alt="Icon" className="w-48 xl:w-64 mr-4"></img> */}
-          <div className="flex flex-col">
-            <span className="font-bold text-xl tracking-tight text-white">
-              {data.site.siteMetadata.title}
-            </span>
-            <span className="">{data.site.siteMetadata.description}</span>
-          </div>
+        <Link to="/" className="flex items-center no-underline text-white">
+          <img src={Logo} alt="Icon" className="w-16 mr-4"></img>
+
+          <img src={LogoText} alt="Icon" className="w-48 xl:w-64 mr-4"></img>
+          <div className="flex flex-col"></div>
         </Link>
 
         <button
@@ -54,13 +53,6 @@ function Header() {
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
               Home
-            </Link>
-
-            <Link
-              to="/service"
-              className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
-            >
-              Service
             </Link>
 
             <Link

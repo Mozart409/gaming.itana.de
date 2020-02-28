@@ -2,6 +2,8 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { List, Icon } from "antd";
 
+import Helmet from "react-helmet";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -156,7 +158,9 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="Index" keywords={[`Itana GmbH Gaming`]} description="" />
-
+      <Helmet>
+        <link rel="canonical" href="https://itana.de/7spielv" />
+      </Helmet>
       <div>
         <div>
           <Anmeldungsliste />

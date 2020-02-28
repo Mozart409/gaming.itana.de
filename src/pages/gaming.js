@@ -18,27 +18,27 @@ export default function Pagegaming() {
       <p>&nbsp;</p>
       <h3>Auftraggeber</h3>
       <ul className="list-disc text-gray-800">
-        <li>Staatsanwaltschaften</li>
-        <li>Gerichte</li>
-        <li>Ordnungsämter</li>
-        <li>Polizeibehörden</li>
+        <li className="ml-4">Staatsanwaltschaften</li>
+        <li className="ml-4">Gerichte</li>
+        <li className="ml-4">Ordnungsämter</li>
+        <li className="ml-4">Polizeibehörden</li>
       </ul>
       <h3>Inhalte</h3>
       <ul className="list-disc text-gray-800">
-        <li>Geldspielgeräte</li>
-        <li>Wettterminals</li>
-        <li>Unterhaltungsgeräte</li>
-        <li>Illegale Spielgeräte</li>
-        <li>Online Gaming</li>
-        <li>Kassenstreifen</li>
-        <li>Geldtechnik allgemein</li>
+        <li className="ml-4">Geldspielgeräte</li>
+        <li className="ml-4">Wettterminals</li>
+        <li className="ml-4">Unterhaltungsgeräte</li>
+        <li className="ml-4">Illegale Spielgeräte</li>
+        <li className="ml-4">Online Gaming</li>
+        <li className="ml-4">Kassenstreifen</li>
+        <li className="ml-4">Geldtechnik allgemein</li>
       </ul>
       <h3>Tätigkeiten</h3>
       <ul className="list-disc text-gray-800">
-        <li>Beratung</li>
-        <li>Erstattung von Gutachten</li>
-        <li>Beweissicherung</li>
-        <li>Forensische Untersuchungen</li>
+        <li className="ml-4">Beratung</li>
+        <li className="ml-4">Erstattung von Gutachten</li>
+        <li className="ml-4">Beweissicherung</li>
+        <li className="ml-4">Forensische Untersuchungen</li>
       </ul>
     </Layout>
   );

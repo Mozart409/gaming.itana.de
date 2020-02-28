@@ -392,11 +392,11 @@ function DatenschutzPage() {
           betroffenen Person Auskunft über folgende Informationen zugestanden:
         </p>
         <ul>
-          <li>die Verarbeitungszwecke</li>
-          <li>
+          <li className="ml-4">die Verarbeitungszwecke</li>
+          <li className="ml-4">
             die Kategorien personenbezogener Daten, die verarbeitet werden
           </li>
-          <li>
+          <li className="ml-4">
             die Empfänger oder Kategorien von Empfängern, gegenüber denen die
             personenbezogenen Daten offengelegt worden sind oder noch
             offengelegt werden, insbesondere bei Empfängern in Drittländern oder

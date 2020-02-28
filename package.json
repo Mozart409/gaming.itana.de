@@ -42,7 +42,7 @@
     "§7 SpielV"
   ],
   "license": "MIT",
-   "scripts": {
+  "scripts": {
     "clean": "gatsby clean",
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{js,jsx,css,json,md}\"",

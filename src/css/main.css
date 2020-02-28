@@ -16,6 +16,10 @@ figcaption {
   font-family: montserrat-alternates, sans-serif, serif;
   font-weight: bold !important;
 }
+
+li::marker {
+  color: #43ac45 !important;
+}
 .ant-steps-item-title {
   color: #000000 !important;
   font-weight: 600 !important;
