@@ -1,19 +1,11 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { List, Icon } from "antd";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import PDF from "../images/pruefantrag2017.pdf";
-
-export const query = graphql`
-  query {
-    file(extension: { eq: "pdf" }, name: { eq: "pruefantrag2017" }) {
-      publicURL
-    }
-  }
-`;
 
 const MinusIcon = () => (
   <svg
@@ -33,6 +25,13 @@ const MinusIcon = () => (
   </svg>
 );
 function Anmeldungsliste() {
+  const data = useStaticQuery(graphql`
+    {
+      file(extension: { eq: "pdf" }, name: { eq: "pruefantrag2017" }) {
+        publicURL
+      }
+    }
+  `);
   const items = [
     {
       value:
@@ -65,7 +64,7 @@ function Anmeldungsliste() {
               <tbody>
                 {items.map(item => (
                   <tr className="bg-white">
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    <td className="px-6 py-4 whitespace-normal text-sm leading-5 font-medium text-gray-900">
                       {item.value}
                     </td>
                   </tr>
@@ -73,23 +72,15 @@ function Anmeldungsliste() {
 
                 <tr className="bg-gray-50 flex justify-center">
                   <td className="px-6 py-4 text-sm leading-5 font-medium text-gray-900">
-                    <a
-                      href={PDF}
-                      className="font-medium text-itana-green hover:text-indigo-500 transition duration-150 ease-in-out"
-                    >
-                      <svg
-                        class="flex-shrink-0 h-5 w-5 mx-auto"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                    <button className="btn-itana w-full mt-2">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={data.file.publicURL}
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      Download
-                    </a>
+                        Anmeldeformular
+                      </a>
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -121,7 +112,7 @@ function ÜberprüfungListe() {
   return (
     <div className="bg-white shadow overflow-hidden  sm:rounded-lg">
       <div className="px-4 border-b border-gray-200 sm:px-6">
-        <h3 className="text-lg leading-6 font-medium text-itana-blue">
+        <h3 className="text-lg leading-6 font-medium text-itana-green">
           Checkliste Anmeldung
         </h3>
       </div>
@@ -133,7 +124,7 @@ function ÜberprüfungListe() {
               <tbody>
                 {items.map(item => (
                   <tr className="bg-white">
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    <td className="px-6 py-4 whitespace-normal text-sm leading-5 font-medium text-gray-900">
                       {item.value}
                     </td>
                   </tr>
@@ -141,23 +132,15 @@ function ÜberprüfungListe() {
 
                 <tr className="bg-gray-50 flex justify-center">
                   <td className="px-6 py-4 text-sm leading-5 font-medium text-gray-900">
-                    <a
-                      href={PDF}
-                      className="font-medium text-itana-green hover:text-indigo-500 transition duration-150 ease-in-out"
-                    >
-                      <svg
-                        class="flex-shrink-0 h-5 w-5 mx-auto"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
+                    <button className="btn-itana w-full mt-2">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.ptb.de/cms/ptb/fachabteilungen/abt8/fb-85/ag-853/zulassungsdatenbank-853.html"
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      Download
-                    </a>
+                        Bauartzulassungen
+                      </a>
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -169,43 +152,24 @@ function ÜberprüfungListe() {
   );
 }
 
-function ChecklistÜberprüfung() {
-  const data = [
-    'Stellen Sie sicher, dass auf allen Geräten eine zulässige Software installiert ist. (Im Zweifelsfall klicken Sie bitte auf den unten stehenden Button "Bauartzulassungen" und informieren sich bei der PTB ob Ihr Gerät über eine zulässige Software verfügt).',
-    "Stellen Sie sicher, dass zur Überprüfung alle zum Gerät zugehörigen Schlüssel vor Ort sind.",
-    "Stellen Sie sicher, dass die Geräte zum Termin eingeschaltet und unbespielt sind.",
-    "Bitte halten Sie sich zum Termin telefonisch ereichbar."
-  ];
-
-  return (
-    <List
-      bordered
-      dataSource={data}
-      renderItem={item => (
-        <List.Item className="inline-block align-baseline">
-          <Icon type="minus-circle" /> <span>{item}</span>
-        </List.Item>
-      )}
-    />
-  );
-}
-
-function IndexPage({ data }) {
+function IndexPage() {
   return (
     <Layout>
       <SEO title="Index" keywords={[`Itana GmbH Gaming`]} description="" />
 
       <div>
-        <Anmeldungsliste />
-        <ÜberprüfungListe />
-        <h1>Überprüfung gemäß §7 SpielV</h1>
-
+        <div>
+          <Anmeldungsliste />
+          <ÜberprüfungListe />
+        </div>
+        <h1 className="mt-8">Überprüfung gemäß §7 SpielV</h1>
+        <p>&nbsp;</p>
         <p>
           Jedes Geldspielgerät gemäß der seit 1.1.2006 geltenden Verordnung über
           Spielgeräte und andere Spiele mit Gewinnmöglichkeit erhält zunächst
           einen auf zwei Jahre begrenzten Aufstellzeitraum.
         </p>
-
+        <p>&nbsp;</p>
         <p>
           Dieser Aufstellzeitraum eines Geldgewinnspielgerätes kann mittels
           einer Prüfung durch einen von einer IHK öffentlich bestellten und
@@ -213,14 +177,14 @@ function IndexPage({ data }) {
           (Überprüfung von Geldspielgeräten) um weitere zwei Jahre verlängert
           werden.
         </p>
-
+        <p>&nbsp;</p>
         <p>
           Aufgabe der Geräteüberprüfung ist es, die Konformität eines
           Nachbaugerätes mit der von der PTB zugelassenen Bauart sicher zu
           stellen. Eine darüber hinaus gehende technische Prüfung ist nicht
           Bestandteil dieser Prüfung.
         </p>
-
+        <p>&nbsp;</p>
         <p>
           Um die Übereinstimmung des Spielgerätes mit dem Baumuster zu
           überprüfen wird ein Vergleich der vorgefundenen Software der
@@ -228,7 +192,7 @@ function IndexPage({ data }) {
           den im Zulassungsschein veröffentlichten Komponenten durchgeführt.
           Hierbei werden relevante Nachträge berücksichtigt.
         </p>
-
+        <p>&nbsp;</p>
         <p>
           Geldspielgeräte werden vorzugsweise am Aufstellort in Gaststätten,
           Spielhallen, oder in Ihrer Werkstatt durch den öffentlich bestellten
@@ -236,7 +200,7 @@ function IndexPage({ data }) {
           ausserhalb der Geschäftszeiten (8:00-18:00) sind problemlos möglich
           und erfolgen nach individueller Vereinbarung.{" "}
         </p>
-
+        <p>&nbsp;</p>
         <p>
           Um Ihnen diese Dienstleistung schnell und überregional anbieten zu
           können wird die Überprüfung ggfs. nicht durch Herrn Jörg Weißleder*,
@@ -246,6 +210,7 @@ function IndexPage({ data }) {
           namentlich benannt, und dessen Bestellungskörperschaft bekannt
           gegeben.
         </p>
+        <p>&nbsp;</p>
         <p>
           *Öffentlich bestellte und vereidigte Sachverständige sind nach Maßgabe
           von § 36 GewO tätig. Jörg Weißleder wurde durch die Industrie- und
@@ -254,33 +219,11 @@ function IndexPage({ data }) {
           Geldspielgeräten öffentlich bestellt und vereidigt. Er unterliegt den
           Bestimmungen der Sachverständigenordnung der Industrie- und
           Handelskammer (IHK) Region Stuttgart. Diese kann unter{" "}
-          <a className="text-itana-blue" href="https://www.stuttgart.ihk24.de">
+          <a className="text-itana-green" href="https://www.stuttgart.ihk24.de">
             https://www.stuttgart.ihk24.de
           </a>{" "}
           eingesehen werden.
         </p>
-        <h2>Checkliste Anmeldung</h2>
-
-        <button className="btn-itana w-full mt-2">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={data.file.publicURL}
-          >
-            Anmeldeformular
-          </a>
-        </button>
-        <h2>Checkliste Überprüfung</h2>
-        <ChecklistÜberprüfung />
-        <button className="btn-itana w-full mt-2">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.ptb.de/cms/ptb/fachabteilungen/abt8/fb-85/ag-853/zulassungsdatenbank-853.html"
-          >
-            Bauartzulassungen
-          </a>
-        </button>
       </div>
     </Layout>
   );

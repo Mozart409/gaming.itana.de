@@ -18,13 +18,13 @@
 @tailwind utilities;
 
 h1 {
-  @apply font-bold !important;
+  @apply font-bold my-4 !important;
 }
 h2 {
-  @apply font-semibold my-4 !important;
+  @apply font-semibold my-2 !important;
 }
 h3 {
-  @apply font-semibold my-4 !important;
+  @apply font-semibold my-2 !important;
 }
 
 section {

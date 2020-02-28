@@ -36,7 +36,7 @@ function KontaktPage() {
           71706 Markgröningen
           <br />
           Telefon:{" "}
-          <a href="tel:+4971149066450" className="text-itana-blue">
+          <a href="tel:+4971149066450" className="text-itana-green">
             +49 711 49066 450
           </a>
           <br />
@@ -47,7 +47,7 @@ function KontaktPage() {
             href="mailto:info@itana.de"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-itana-blue"
+            className="text-itana-green"
           >
             info@itana.de
           </a>

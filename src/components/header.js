@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby";
 
 function Header() {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query SiteTitleQuery123 {
       site {
         siteMetadata {
           title
@@ -57,17 +57,17 @@ function Header() {
             </Link>
 
             <Link
-              to="/about"
+              to="/service"
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
-              Über uns
+              Service
             </Link>
 
             <Link
-              to="/7spielv"
+              to="/gaming"
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
-              7SpielV
+              Gaming
             </Link>
 
             <Link

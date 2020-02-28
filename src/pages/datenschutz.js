@@ -728,7 +728,7 @@ function DatenschutzPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-itana-blue">
+            <span className="text-itana-green">
               https://www.google.de/intl/de/adsense/start/
             </span>
           </a>{" "}
@@ -826,7 +826,7 @@ function DatenschutzPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-itana-blue">
+            <span className="text-itana-green">
               https://tools.google.com/dlpage/gaoptout
             </span>
           </a>{" "}
@@ -856,7 +856,7 @@ function DatenschutzPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-itana-blue">
+            <span className="text-itana-green">
               https://www.google.de/intl/de/policies/privacy/
             </span>
           </a>{" "}
@@ -866,14 +866,14 @@ function DatenschutzPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-itana-blue">
+            <span className="text-itana-green">
               http://www.google.com/analytics/terms/de.html
             </span>
           </a>{" "}
           abgerufen werden. Google Analytics wird unter diesem Link{" "}
-          <span className="text-itana-blue">
+          <span className="text-itana-green">
             <a
-              className="text-itana-blue"
+              className="text-itana-green"
               href="https://www.google.com/intl/de_de/analytics/"
               target="_blank"
               rel="noopener noreferrer"
@@ -969,9 +969,9 @@ function DatenschutzPage() {
           interessenbezogenen Werbung durch Google zu widersprechen. Hierzu muss
           die betroffene Person von jedem der von ihr genutzten Internetbrowser
           aus den Link{" "}
-          <span className="text-itana-blue">
+          <span className="text-itana-green">
             <a
-              className="text-itana-blue"
+              className="text-itana-green"
               href="http://www.google.de/settings/ads"
               target="_blank"
               rel="noopener noreferrer"
@@ -982,9 +982,9 @@ function DatenschutzPage() {
           aufrufen und dort die gewünschten Einstellungen vornehmen. Weitere
           Informationen und die geltenden Datenschutzbestimmungen von Google
           können unter{" "}
-          <span className="text-itana-blue">
+          <span className="text-itana-green">
             <a
-              className="text-itana-blue"
+              className="text-itana-green"
               href="https://www.google.de/intl/de/policies/privacy/"
               target="_blank"
               rel="noopener noreferrer"

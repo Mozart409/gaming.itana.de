@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         "itana-gray": "#d8d8d8",
-        "itana-blue": "#00345d",
+        "itana-green": "#00345d",
         "itana-green": "#43ac45;",
         "itana-red": "#d40000"
       }

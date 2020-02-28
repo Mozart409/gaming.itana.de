@@ -28,7 +28,7 @@ function ImpressumPage() {
           71706 Markgröningen
           <br />
           Telefon:{" "}
-          <a href="tel:+4971149066450" className="text-itana-blue">
+          <a href="tel:+4971149066450" className="text-itana-green">
             +49 711 49066 450
           </a>
           <br />
@@ -63,7 +63,7 @@ function ImpressumPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-itana-blue">
+            <span className="text-itana-green">
               https://www.stuttgart.ihk24.de
             </span>
           </a>{" "}
@@ -123,7 +123,7 @@ function ImpressumPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-itana-blue">
+            <span className="text-itana-green">
               http://ec.europa.eu/consumers/odr/
             </span>
           </a>
