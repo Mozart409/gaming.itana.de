@@ -9,7 +9,7 @@ function DatenschutzPage() {
     <Layout>
       <SEO
         title="Datenschutz"
-        keywords={[`Datenschutz`]}
+       
         description="Datenschutz"
       />
       <Helmet>

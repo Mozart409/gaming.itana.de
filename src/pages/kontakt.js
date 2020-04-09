@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -10,16 +10,9 @@ function KontaktPage() {
     <Layout>
       <SEO
         title="Kontakt"
-        keywords={[`Kontakt`]}
+       
         description="Können wir Dir bei Deinen Fragen helfen? Kontaktiere uns unverbindlich - wir freuen uns!"
       />
-      <Helmet>
-        {" "}
-        <link
-          rel="canonical"
-          href="https://reservation.itana.de/kontakt.html"
-        />
-      </Helmet>
 
       <h1>Kontaktieren Sie uns. Wir antworten so schnell wie möglich.</h1>
 

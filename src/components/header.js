@@ -56,14 +56,14 @@ function Header() {
             </Link>
 
             <Link
-              to="/gaming"
+              to="/gaming/"
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
               Gaming
             </Link>
 
             <Link
-              to="/kontakt"
+              to="/kontakt/"
               className="block md:inline-block mt-4 md:mt-0 mr-4 no-underline text-white"
             >
               Kontakt

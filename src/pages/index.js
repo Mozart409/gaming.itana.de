@@ -157,10 +157,7 @@ function ÜberprüfungListe() {
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Index" keywords={[`Itana GmbH Gaming`]} description="" />
-      <Helmet>
-        <link rel="canonical" href="https://itana.de/7spielv" />
-      </Helmet>
+      <SEO title="7spielV" description="" />
       <div>
         <div>
           <Anmeldungsliste />
