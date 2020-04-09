@@ -7,20 +7,20 @@ export default function footer() {
         <nav className="flex flex-wrap justify-center">
           <div className="px-5">
             <a
-              className="text-base leading-6 text-gray-300 hover:text-gray-900"
-              href="/impressum"
+              className="text-base leading-6 text-gray-300 hover:text-white"
+              href="https://itana.de/impressum/"
               target="_blank"
-              rel="norel noopener"
+              rel="noopener noreferrer"
             >
               Impressum
             </a>
           </div>
           <div className="px-5">
             <a
-              className="text-base leading-6 text-gray-300 hover:text-gray-900"
-              href="/datenschutz"
+              className="text-base leading-6 text-gray-300 hover:text-white"
+              href="https://itana.de/datenschutz/"
               target="_blank"
-              rel="norel noopener"
+              rel="noopener noreferrer"
             >
               Datenschutz
             </a>
