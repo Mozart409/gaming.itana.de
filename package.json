@@ -54,7 +54,7 @@
     "fix:prettier": "prettier --write \"**/*.{js,jsx,css,json,md}\"",
     "fix": "yarn fix:lint && yarn fix:prettier",
     "start": "yarn run develop",
-    "serve": "gatsby serve",
+    "serve": "serve -l 9000 public",
     "prod": "yarn build && yarn serve",
     "test": "prettier --check src/**/*.{js,jsx,css,md,json}"
   },
@@ -73,6 +73,7 @@
     "husky": "^4.2.1",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
+    "serve": "^11.3.0",
     "tailwindcss": "1.2.0",
     "typescript": "3.7.5"
   }
