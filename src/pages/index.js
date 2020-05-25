@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { List, Icon } from "antd";
 
-import Helmet from "react-helmet";
+import {Helmet} from "react-helmet";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -157,7 +157,7 @@ function ÜberprüfungListe() {
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="7spielV" description="" />
+      <SEO title="7spielV" />
       <div>
         <div>
           <Anmeldungsliste />

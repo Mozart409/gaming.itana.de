@@ -29,6 +29,7 @@ module.exports = {
       options: {
         https: true,
         www: false,
+        DisallowSymLinks: true,
         SymLinksIfOwnerMatch: true
       }
     },
