@@ -53,10 +53,10 @@ function Anmeldungsliste() {
 
   return (
     <div className="bg-white shadow overflow-hidden  sm:rounded-lg">
-      <div className="px-4 border-b border-gray-200 sm:px-6">
-        <h3 className="text-lg leading-6 font-medium text-itana-green">
+      <a id="anmeldung"></a><div className="px-4 border-b border-gray-200 sm:px-6">
+        <h2 className="text-lg leading-6 font-medium text-itana-green">
           Checkliste Anmeldung
-        </h3>
+        </h2>
       </div>
 
       <div className="flex flex-col">
@@ -113,10 +113,10 @@ function ÜberprüfungListe() {
 
   return (
     <div className="bg-white shadow overflow-hidden  sm:rounded-lg">
-      <div className="px-4 border-b border-gray-200 sm:px-6">
-        <h3 className="text-lg leading-6 font-medium text-itana-green">
-          Checkliste Anmeldung
-        </h3>
+      <a id="bauart"></a><div className="px-4 border-b border-gray-200 sm:px-6">
+        <h2 className="text-lg leading-6 font-medium text-itana-green">
+          Checkliste Bauartzulassungen
+        </h2>
       </div>
 
       <div className="flex flex-col">
@@ -157,14 +157,28 @@ function ÜberprüfungListe() {
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="7spielV" />
+      <SEO title="Überprüfung Geldspielgeräte🥇7SpielV|Spielverordnung - Itana GmbH"
+      description="§7 SpielV prüfen lassen ✔ IT Sachverständiger IHK ✔ langjähriges Know-How ✔ individuelle Termine ✔ deutschlandweit ✔ Jetzt kontaktieren 📱+49 711 49066 450"
+      />
       <div>
         <div>
-          <Anmeldungsliste />
-          <ÜberprüfungListe />
+         
+         
+         
+         
         </div>
         <h1 className="mt-8">Überprüfung gemäß §7 SpielV</h1>
         <p>&nbsp;</p>
+        <p>
+         Für Experten direkt der Link zur Anmeldung und dem Bauarten-Check!
+         <br/>  
+        <a href="#anmeldung" className="text-lg leading-6 font-medium text-itana-green">Link zur Checkliste Anmeldung </a>
+        </p>
+        <p><a href="#bauart" className="text-lg leading-6 font-medium text-itana-green">Link zur Checkliste Bauartzulassungen </a>
+        <br/><br/>
+        </p>
+
+        <h2>Warum brauche ich einen Sachverständigen für meine Geldspielgeräte?</h2>
         <p>
           Jedes Geldspielgerät gemäß der seit 1.1.2006 geltenden Verordnung über
           Spielgeräte und andere Spiele mit Gewinnmöglichkeit erhält zunächst
@@ -175,7 +189,7 @@ function IndexPage() {
           Dieser Aufstellzeitraum eines Geldgewinnspielgerätes kann mittels
           einer Prüfung durch einen von einer IHK öffentlich bestellten und
           vereidigten Sachverständigen mit dem Bestellungsgebiet 530
-          (Überprüfung von Geldspielgeräten) um weitere zwei Jahre verlängert
+          (Überprüfung von Geldspielgeräten) um weitere <b>zwei Jahre verlängert</b>
           werden.
         </p>
         <p>&nbsp;</p>
@@ -194,16 +208,21 @@ function IndexPage() {
           Hierbei werden relevante Nachträge berücksichtigt.
         </p>
         <p>&nbsp;</p>
+        <h2>Wo werden die Geräte überprüft?</h2>
         <p>
-          Geldspielgeräte werden vorzugsweise am Aufstellort in Gaststätten,
-          Spielhallen, oder in Ihrer Werkstatt durch den öffentlich bestellten
-          und vereidigten Sachverständigen Jörg Weißleder* überprüft. Prüfungen
-          ausserhalb der Geschäftszeiten (8:00-18:00) sind problemlos möglich
+          Geldspielgeräte werden vorzugsweise <b>am Aufstellort</b> in <b>Gaststätten</b>,
+          <b>Spielhallen</b>, oder in <b>Ihrer Werkstatt</b> durch den öffentlich bestellten
+          und vereidigten Sachverständigen Jörg Weißleder* überprüft.
+          </p>
+          <h2>Wann werden die Geräte überprüft?</h2>
+          <p>
+           Prüfungen <b>ausserhalb der Geschäftszeiten (8:00-18:00) sind problemlos möglich </b>
           und erfolgen nach individueller Vereinbarung.{" "}
         </p>
         <p>&nbsp;</p>
+        <h2>Werden die Spielgeräte auch außerhalb von Stuttgart gerpüft?</h2>
         <p>
-          Um Ihnen diese Dienstleistung schnell und überregional anbieten zu
+          Um Ihnen diese Dienstleistung schnell und <b>überregional</b> anbieten zu
           können wird die Überprüfung ggfs. nicht durch Herrn Jörg Weißleder*,
           sondern durch einen anderen, ebenfalls öffentlich bestellten und
           vereidigten Sachverständigen durchgeführt. In diesem Fall wird Ihnen
@@ -225,6 +244,11 @@ function IndexPage() {
           </a>{" "}
           eingesehen werden.
         </p>
+        
+      </div>
+      <div>
+        <Anmeldungsliste />
+        <ÜberprüfungListe />
       </div>
     </Layout>
   );

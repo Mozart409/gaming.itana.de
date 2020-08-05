@@ -8,7 +8,7 @@ function DatenschutzPage() {
   return (
     <Layout>
       <SEO
-        title="Datenschutz"
+        title="Datenschutz - Itana GmbH"
        
         description="Datenschutz"
       />

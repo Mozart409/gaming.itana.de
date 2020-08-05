@@ -9,9 +9,9 @@ function KontaktPage() {
   return (
     <Layout>
       <SEO
-        title="Kontakt"
+        title="Kontakt zum Profi - IT Sachverständiger IHK - Itana GmbH"
        
-        description="Können wir Dir bei Deinen Fragen helfen? Kontaktiere uns unverbindlich - wir freuen uns!"
+        description="Kontakt aufnehmen um SpielV prüfen lassen ✔ Profi IT Sachverständiger IHK ✔ langjähriges Know-How Jetzt kontaktieren 📱+49 711 49066 450"
       />
 
       <h1>Kontaktieren Sie uns. Wir antworten so schnell wie möglich.</h1>
