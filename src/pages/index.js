@@ -157,7 +157,8 @@ function ÜberprüfungListe() {
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="7spielV" />
+      <SEO title="Überprüfung Geldspielgeräte🥇7SpielV|Spielverordnung - Itana GmbH" 
+         description="§7 SpielV prüfen lassen ✔ IT Sachverständiger IHK ✔ langjähriges Know-How ✔ individuelle Termine ✔ deutschlandweit ✔ Jetzt kontaktieren 📱+49 711 49066 450" />
       <div>
         <div>
           <Anmeldungsliste />

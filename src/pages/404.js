@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="404" />
+      <SEO title="404 Fehlerseite - Itana GmbH" description="404 Fehlerseite - Itana GmbH" />
 
       <div className="m-auto">
         <Link to="/">

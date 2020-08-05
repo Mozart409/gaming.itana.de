@@ -9,7 +9,7 @@ function KontaktPage() {
   return (
     <Layout>
       <SEO
-        title="Kontakt"
+        title="Kontakt - Itana GmbH"
        
         description="Können wir Dir bei Deinen Fragen helfen? Kontaktiere uns unverbindlich - wir freuen uns!"
       />
