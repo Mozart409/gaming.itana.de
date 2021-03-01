@@ -1,19 +1,18 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react'
+import Helmet from 'react-helmet'
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 function DatenschutzPage() {
   return (
     <Layout>
       <SEO
         title="Datenschutz - Itana GmbH"
-       
         description="Datenschutz - Itana GmbH"
       />
       <Helmet>
-        {" "}
+        {' '}
         <link rel="canonical" href="https://itana.de/datenschutz" />
       </Helmet>
 
@@ -722,7 +721,7 @@ function DatenschutzPage() {
         </p>
         <p>&nbsp;</p>
         <p>
-          Google-AdSense wird unter diesem Link{" "}
+          Google-AdSense wird unter diesem Link{' '}
           <a
             href="https://www.google.de/intl/de/adsense/start/"
             target="_blank"
@@ -731,7 +730,7 @@ function DatenschutzPage() {
             <span className="text-itana-green">
               https://www.google.de/intl/de/adsense/start/
             </span>
-          </a>{" "}
+          </a>{' '}
           genauer erläutert.
         </p>
         <p>&nbsp;</p>
@@ -820,7 +819,7 @@ function DatenschutzPage() {
           erzeugten, auf eine Nutzung dieser Internetseite bezogenen Daten sowie
           der Verarbeitung dieser Daten durch Google zu widersprechen und eine
           solche zu verhindern. Hierzu muss die betroffene Person ein
-          Browser-Add-On unter dem Link{" "}
+          Browser-Add-On unter dem Link{' '}
           <a
             href="https://tools.google.com/dlpage/gaoptout"
             target="_blank"
@@ -829,7 +828,7 @@ function DatenschutzPage() {
             <span className="text-itana-green">
               https://tools.google.com/dlpage/gaoptout
             </span>
-          </a>{" "}
+          </a>{' '}
           herunterladen und installieren. Dieses Browser-Add-On teilt Google
           Analytics über JavaScript mit, dass keine Daten und Informationen zu
           den Besuchen von Internetseiten an Google Analytics übermittelt werden
@@ -850,7 +849,7 @@ function DatenschutzPage() {
         <p>&nbsp;</p>
         <p>
           Weitere Informationen und die geltenden Datenschutzbestimmungen von
-          Google können unter{" "}
+          Google können unter{' '}
           <a
             href="https://www.google.de/intl/de/policies/privacy/"
             target="_blank"
@@ -859,8 +858,8 @@ function DatenschutzPage() {
             <span className="text-itana-green">
               https://www.google.de/intl/de/policies/privacy/
             </span>
-          </a>{" "}
-          und unter{" "}
+          </a>{' '}
+          und unter{' '}
           <a
             href="http://www.google.com/analytics/terms/de.html"
             target="_blank"
@@ -869,8 +868,8 @@ function DatenschutzPage() {
             <span className="text-itana-green">
               http://www.google.com/analytics/terms/de.html
             </span>
-          </a>{" "}
-          abgerufen werden. Google Analytics wird unter diesem Link{" "}
+          </a>{' '}
+          abgerufen werden. Google Analytics wird unter diesem Link{' '}
           <span className="text-itana-green">
             <a
               className="text-itana-green"
@@ -879,7 +878,7 @@ function DatenschutzPage() {
               rel="noopener noreferrer"
             >
               https://www.google.com/intl/de_de/analytics/
-            </a>{" "}
+            </a>{' '}
           </span>
           genauer erläutert.
         </p>
@@ -968,7 +967,7 @@ function DatenschutzPage() {
           Ferner besteht für die betroffene Person die Möglichkeit, der
           interessenbezogenen Werbung durch Google zu widersprechen. Hierzu muss
           die betroffene Person von jedem der von ihr genutzten Internetbrowser
-          aus den Link{" "}
+          aus den Link{' '}
           <span className="text-itana-green">
             <a
               className="text-itana-green"
@@ -978,10 +977,10 @@ function DatenschutzPage() {
             >
               www.google.de/settings/ads
             </a>
-          </span>{" "}
+          </span>{' '}
           aufrufen und dort die gewünschten Einstellungen vornehmen. Weitere
           Informationen und die geltenden Datenschutzbestimmungen von Google
-          können unter{" "}
+          können unter{' '}
           <span className="text-itana-green">
             <a
               className="text-itana-green"
@@ -990,7 +989,7 @@ function DatenschutzPage() {
               rel="noopener noreferrer"
             >
               https://www.google.de/intl/de/policies/privacy/
-            </a>{" "}
+            </a>{' '}
           </span>
           abgerufen werden.
         </p>
@@ -1119,7 +1118,7 @@ function DatenschutzPage() {
         </p>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default DatenschutzPage;
+export default DatenschutzPage

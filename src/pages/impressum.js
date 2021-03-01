@@ -1,7 +1,7 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from 'react'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 function ImpressumPage() {
   return (
@@ -27,7 +27,7 @@ function ImpressumPage() {
           <br />
           71706 Markgröningen
           <br />
-          Telefon:{" "}
+          Telefon:{' '}
           <a href="tel:+4971149066450" className="text-itana-green">
             +49 711 49066 450
           </a>
@@ -57,7 +57,7 @@ function ImpressumPage() {
           Informationsverarbeitung; Überprüfung von Geldspielgeräten öffentlich
           bestellt und vereidigt. Er unterliegt den Bestimmungen der
           Sachverständigenordnung der Industrie- und Handelskammer (IHK) Region
-          Stuttgart. Diese kann unter{" "}
+          Stuttgart. Diese kann unter{' '}
           <a
             href="https://www.stuttgart.ihk24.de"
             target="_blank"
@@ -66,7 +66,7 @@ function ImpressumPage() {
             <span className="text-itana-green">
               https://www.stuttgart.ihk24.de
             </span>
-          </a>{" "}
+          </a>{' '}
           eingesehen werden.
         </p>
         <p>&nbsp;</p>
@@ -658,7 +658,7 @@ function ImpressumPage() {
         </div>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default ImpressumPage;
+export default ImpressumPage

@@ -1,14 +1,14 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import ScrollToTop from "react-scroll-up";
+import React from 'react'
+import Helmet from 'react-helmet'
+import ScrollToTop from 'react-scroll-up'
 
-import Header from "./header";
-import Footer from "./footer";
+import Header from './header'
+import Footer from './footer'
 
-import "typeface-montserrat-alternates";
-import "typeface-montserrat";
+import 'typeface-montserrat-alternates'
+import 'typeface-montserrat'
 
-import "../css/main.css";
+import '../css/main.css'
 
 function Layout({ children }) {
   return (
@@ -48,7 +48,7 @@ function Layout({ children }) {
 
       <Footer />
     </div>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

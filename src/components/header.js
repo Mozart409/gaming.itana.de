@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
-
-import Logo from "../images/gaming/gaming.svg";
-import LogoText from "../images/gaming/gaming.itana.de.svg";
+import React, { useState } from 'react'
+import { graphql, useStaticQuery, Link } from 'gatsby'
+import Helmet from 'react-helmet'
+import Logo from '../images/gaming/gaming.svg'
+import LogoText from '../images/gaming/gaming.itana.de.svg'
 
 function Header() {
   const data = useStaticQuery(graphql`
@@ -14,9 +14,9 @@ function Header() {
         }
       }
     }
-  `);
+  `)
 
-  const [isExpanded, toggleExpansion] = useState(false);
+  const [isExpanded, toggleExpansion] = useState(false)
 
   return (
     <nav className="bg-itana-green align-baseline">
@@ -80,7 +80,7 @@ function Header() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Header;
+export default Header
