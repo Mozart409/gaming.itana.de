@@ -20,6 +20,14 @@ function Header() {
 
   return (
     <nav className="bg-itana-green align-baseline">
+      <Helmet>
+        <script
+          id="usercentrics-cmp"
+          data-settings-id="oVM0OC3Mr"
+          src="https://app.usercentrics.eu/browser-ui/latest/bundle.js"
+          defer
+        ></script>
+      </Helmet>
       <div className="flex flex-wrap items-center justify-between  md:p-8 mr-2 p-4">
         <Link to="/" className="flex items-center no-underline text-white">
           <img src={Logo} alt="Icon" className="w-16 mr-4"></img>
